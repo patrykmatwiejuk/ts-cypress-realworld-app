@@ -12,6 +12,7 @@
 # misc
 .DS_Store
 .idea
+/old_cypress_folder
 
 npm-debug.log*
 yarn-debug.log*
