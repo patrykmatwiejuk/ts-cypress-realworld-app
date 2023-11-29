@@ -1,6 +1,6 @@
 import { loginPage, userKB } from "../pages/LoginPage";
 import { registerPage } from "../pages/RegisterPage";
-const { faker } = require("@faker-js/faker");
+import { faker } from "@faker-js/faker";
 
 describe("Registering an account", () => {
   before(() => {
@@ -26,7 +26,7 @@ describe("Registering an account", () => {
 
   it("Fills out the user registration form and registers a new user", () => {
     cy.visit("/signup");
-    registerPage.firstNameInputField.type(faker.person.firstName());
-    registerPage.lastNameInputField.type(faker.person.lastName());
+    registerPage.firstNameInputField.type(faker.name.firstName());
+    registerPage.lastNameInputField.type(faker.name.lastName());
   });
 });

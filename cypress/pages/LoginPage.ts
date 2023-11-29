@@ -16,6 +16,9 @@ class LoginPage {
   get signInButton() {
     return cy.get('[data-test="signin-submit"]');
   }
+  get registerAnAccountLink() {
+    return cy.get('[data-test="signup"]');
+  }
 }
 const userKB = Users.userKB;
 const userTB = Users.userTB;
