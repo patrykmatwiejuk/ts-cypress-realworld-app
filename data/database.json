@@ -74,6 +74,72 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "QrKeNxNiB",
+      "uuid": "c2ff2bd1-a10d-412c-8ff2-4c4d4a81d556",
+      "firstName": "Stanley",
+      "lastName": "Rutherford",
+      "username": "Stella_Crooks",
+      "password": "$2a$10$lTNBp5nWY4J4cn4Y5SNVHupWfcCCWtTKpQU/tuLYLU/jW6dxaU2yK",
+      "balance": 0,
+      "createdAt": "2023-12-04T20:17:46.512Z",
+      "modifiedAt": "2023-12-04T20:17:46.512Z"
+    },
+    {
+      "id": "-2EiQWteZ",
+      "uuid": "8026ca9a-bb82-44e8-a001-5d8b6ef95d0c",
+      "firstName": "Harmony",
+      "lastName": "Hills",
+      "username": "Pablo90",
+      "password": "$2a$10$YURQOQXY2FEMUp0eutK.lOtCfUSKsDoGo1DYfsZlShqw.9SawZIfK",
+      "balance": 0,
+      "createdAt": "2023-12-04T20:23:14.355Z",
+      "modifiedAt": "2023-12-04T20:23:14.355Z"
+    },
+    {
+      "id": "Gct6UQ_yT",
+      "uuid": "926a9712-707c-47c6-b626-c12eb7973847",
+      "firstName": "Selena",
+      "lastName": "Herman",
+      "username": "Gwendolyn23",
+      "password": "$2a$10$AN5wZ7NwjUjHiwNWq0bAPeuT./EkodaevS6qDLnvpaJHzCtlpG4GC",
+      "balance": 0,
+      "createdAt": "2023-12-04T21:22:53.128Z",
+      "modifiedAt": "2023-12-04T21:22:53.128Z"
+    },
+    {
+      "id": "NOlMZ-KC2",
+      "uuid": "23049482-5b51-4e48-964d-f662d7ff661c",
+      "firstName": "Lilliana",
+      "lastName": "Hand",
+      "username": "Darrion.Weber",
+      "password": "$2a$10$Z8oLPpLyKn5fRUBsn0jU6.VRZYqDlk9qFfXqf1bSUHfFdtJ9IzP7O",
+      "balance": 0,
+      "createdAt": "2023-12-04T21:25:36.580Z",
+      "modifiedAt": "2023-12-04T21:25:36.580Z"
+    },
+    {
+      "id": "ClvWxCUnn",
+      "uuid": "7e6222a6-d216-4c79-b789-cc4b5695ee20",
+      "firstName": "Liam",
+      "lastName": "Hand",
+      "username": "Lucious72",
+      "password": "$2a$10$ZTiJuY.PdUtz2tF1EMA.tOqZSqqhn/.P9qYrqtivM7I.pL27SFCe.",
+      "balance": 0,
+      "createdAt": "2023-12-04T21:47:52.409Z",
+      "modifiedAt": "2023-12-04T21:47:52.409Z"
+    },
+    {
+      "id": "tQSl52cpd",
+      "uuid": "e15c4b0b-5eb1-49ca-bbfe-f1da4f1d878f",
+      "firstName": "Henry",
+      "lastName": "Nienow",
+      "username": "Columbus43",
+      "password": "$2a$10$hhZG9QKggVr9GtnlPy9WN.r7/l3ulLZYyR03ylaYrO9OQQCvpVvUG",
+      "balance": 0,
+      "createdAt": "2023-12-04T21:49:52.336Z",
+      "modifiedAt": "2023-12-04T21:49:52.336Z"
     }
   ],
   "contacts": [

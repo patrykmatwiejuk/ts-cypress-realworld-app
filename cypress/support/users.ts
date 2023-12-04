@@ -12,9 +12,9 @@ interface UsersTemplate {
 
 class User implements UsersTemplate {
   username: string;
-  password = "s3cret";
+  password = Cypress.env().defaultPassword;
 
-  constructor(username: string, password: string = "s3cret") {
+  constructor(username: string, password: string = Cypress.env().defaultPassword) {
     this.username = username;
     this.password = password;
   }

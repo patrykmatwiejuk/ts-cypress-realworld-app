@@ -13,9 +13,7 @@ describe("Logging in", () => {
     loginPage.rememberMeLabel.contains("Remember me");
   });
 
-  it("Fills out the log in form, and saves the session", () => {
-    cy.session("login", () => {
-      cy.loginAs(userKB);
-    });
+  it("Fills out the log in form", () => {
+    cy.loginAs(userKB);
   });
 });
