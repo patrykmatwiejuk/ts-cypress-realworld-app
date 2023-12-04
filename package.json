@@ -157,7 +157,7 @@
     "list:dev:users": "cat data/database.json | json -a users | json -a id username",
     "types": "tsc --noEmit",
     "precypress:open": "yarn predev:cognito:ci",
-    "cypress:open": "cypress open",
+    "cyopen": "cypress open --e2e --browser chrome",
     "cypress:open:mobile": "cypress open --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
     "cypress:run": "cypress run",
     "cypress:run:component": "cypress run --component",

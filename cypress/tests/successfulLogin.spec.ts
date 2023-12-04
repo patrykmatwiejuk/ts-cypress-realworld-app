@@ -1,7 +1,7 @@
 import { loginPage, userKB, userTB, userA, userG, userJK } from "../pages/LoginPage";
 
 describe("Logging in", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("/signin");
   });
 
@@ -13,9 +13,9 @@ describe("Logging in", () => {
     loginPage.rememberMeLabel.contains("Remember me");
   });
 
-  it("Fills out the log in form", () => {
-    loginPage.usernameInputField.type(userKB.username);
-    loginPage.passwordInputField.type(userKB.password, { log: false });
-    loginPage.signInButton.click();
+  it("Fills out the log in form, and saves the session", () => {
+    cy.session("login", () => {
+      cy.loginAs(userKB);
+    });
   });
 });
