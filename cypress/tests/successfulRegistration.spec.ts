@@ -19,12 +19,15 @@ describe("Registering an account", () => {
     loginPage.registerAnAccountLink.click();
     cy.url().should("include", "/signup");
 
-    registerPage.formInputIds.forEach((inputId) => {
+    registerPage.formInputIds.forEach((inputId, index) => {
       cy.get(inputId).should("be.visible").click().blur();
-    });
-    registerPage.formInputHelperTexts.forEach((helperText) => {
+      const helperText = registerPage.formInputHelperTexts[index];
       cy.contains(helperText).should("be.visible");
     });
+
+    // registerPage.formInputHelperTexts.forEach((helperText) => {
+    //   cy.contains(helperText).should("be.visible");
+    // });
 
     // registerPage.firstNameInputField.should("be.visible");
     // registerPage.firstNameInputField.click().blur();
