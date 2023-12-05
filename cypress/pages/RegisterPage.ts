@@ -32,6 +32,26 @@ class RegisterPage {
   get confirmPasswordRequiredHelperText() {
     return cy.contains("Confirm your password");
   }
+  get formInputIds() {
+    let formInputIds: string[] = [];
+    return (formInputIds = [
+      "#firstName",
+      "#lastName",
+      "#username",
+      "#password",
+      "#confirmPassword",
+    ]);
+  }
+  get formInputHelperTexts() {
+    let formInputHelperTexts: string[] = [];
+    return (formInputHelperTexts = [
+      "First Name is required",
+      "Last Name is required",
+      "Username is required",
+      "Enter your password",
+      "Confirm your password",
+    ]);
+  }
 }
 
 const registerPage = new RegisterPage();

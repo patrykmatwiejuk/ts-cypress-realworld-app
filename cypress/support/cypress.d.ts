@@ -13,5 +13,6 @@ type LoginCredentials = {
 namespace Cypress {
   interface Chainable {
     loginAs(userCredentials: LoginCredentials): Chainable<VoidFunction>;
+    assertLoginInputFields(): Chainable<VoidFunction>;
   }
 }

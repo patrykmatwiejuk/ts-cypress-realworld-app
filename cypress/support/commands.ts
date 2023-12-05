@@ -1,4 +1,5 @@
 import { loginPage } from "../pages/LoginPage";
+import { registerPage } from "../pages/RegisterPage";
 
 Cypress.Commands.add("loginAs", (userCredentials: LoginCredentials) => {
   const { username, password } = userCredentials;
