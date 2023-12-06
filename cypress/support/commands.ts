@@ -8,3 +8,7 @@ Cypress.Commands.add("loginAs", (userCredentials: LoginCredentials) => {
   loginPage.passwordInputField.type(password, { log: false });
   loginPage.signInButton.click();
 });
+
+Cypress.Commands.add("isVisible", { prevSubject: true }, (selector) => {
+  cy.get(selector).should("be.visible");
+});

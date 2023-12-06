@@ -1,3 +1,8 @@
+import { faker } from "@faker-js/faker";
+
+const { firstName, lastName } = faker.name;
+const { userName } = faker.internet;
+
 class RegisterPage {
   get firstNameInputField() {
     return cy.get("#firstName");
@@ -33,7 +38,7 @@ class RegisterPage {
     return cy.contains("Confirm your password");
   }
   get formInputIds() {
-    let formInputIds: string[] = [];
+    let formInputIds: string[];
     return (formInputIds = [
       "#firstName",
       "#lastName",
@@ -43,7 +48,7 @@ class RegisterPage {
     ]);
   }
   get formInputHelperTexts() {
-    let formInputHelperTexts: string[] = [];
+    let formInputHelperTexts: string[];
     return (formInputHelperTexts = [
       "First Name is required",
       "Last Name is required",
@@ -52,6 +57,16 @@ class RegisterPage {
       "Confirm your password",
     ]);
   }
+  // get formInputValues() {
+  //   let formInputValues: string[];
+  //   return (formInputValues = [
+  //     firstName(),
+  //     lastName(),
+  //     userName(),
+  //     Cypress.env().defaultPassword,
+  //     Cypress.env().defaultPassword,
+  //   ]);
+  // }
 }
 
 const registerPage = new RegisterPage();
