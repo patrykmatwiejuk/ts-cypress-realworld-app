@@ -1,9 +1,4 @@
-// Users:
-// t45AiwidW Katharina_Bernier
-// qywYp6hS0U Tavares_Barrows
-// bDjUb4ir5O Allie2
-// 24VniajY1y Giovanna74
-// tsHF6_D5oQ Jessyca.Kuhic
+const defaultPassword = Cypress.env().defaultPassword;
 
 interface UsersTemplate {
   username: string;
@@ -12,9 +7,9 @@ interface UsersTemplate {
 
 class User implements UsersTemplate {
   username: string;
-  password = Cypress.env().defaultPassword;
+  password = defaultPassword;
 
-  constructor(username: string, password: string = Cypress.env().defaultPassword) {
+  constructor(username: string, password: string = defaultPassword) {
     this.username = username;
     this.password = password;
   }
@@ -34,4 +29,4 @@ const Users = {
   userJK,
 };
 
-export default Users;
+export { Users, defaultPassword };

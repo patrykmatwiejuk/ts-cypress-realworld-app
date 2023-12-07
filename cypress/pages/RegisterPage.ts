@@ -57,16 +57,6 @@ class RegisterPage {
       "Confirm your password",
     ]);
   }
-  // get formInputValues() {
-  //   let formInputValues: string[];
-  //   return (formInputValues = [
-  //     firstName(),
-  //     lastName(),
-  //     userName(),
-  //     Cypress.env().defaultPassword,
-  //     Cypress.env().defaultPassword,
-  //   ]);
-  // }
 }
 
 const registerPage = new RegisterPage();

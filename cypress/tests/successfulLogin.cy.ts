@@ -14,6 +14,9 @@ describe("Logging in", () => {
   });
 
   it("Fills out the log in form", () => {
-    cy.loginAs(userKB);
+    cy.visit("/signin");
+    loginPage.usernameInputField.type(userKB.username);
+    loginPage.passwordInputField.type(userKB.password, { log: false });
+    loginPage.signInButton.click();
   });
 });

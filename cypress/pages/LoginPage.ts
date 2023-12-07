@@ -1,4 +1,4 @@
-import Users from "../support/users";
+import { Users } from "../support/users";
 
 class LoginPage {
   get usernameInputField() {

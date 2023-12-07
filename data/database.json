@@ -76,37 +76,15 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "6hPQIwS6r",
-      "uuid": "0c085030-4428-4147-9d74-d50eb503621a",
-      "firstName": "Watson",
-      "lastName": "Collins",
-      "username": "Susie85",
-      "password": "$2a$10$E/JSMWJYwSa6/68XtXvcG.xRMjjqSlJaKbvPJfAJpWoedEL5ZuzVq",
+      "id": "Zvn4ahw69",
+      "uuid": "1fec2c66-3204-439c-89a2-2e7bfca13605",
+      "firstName": "randomname",
+      "lastName": "randomlastname",
+      "username": "randomusername",
+      "password": "$2a$10$EB0MPCRwOSzK7gOH0szeIOn.2oaozd5xHhKfzuFywodQN6t1ibqt6",
       "balance": 0,
-      "createdAt": "2023-12-06T16:44:05.049Z",
-      "modifiedAt": "2023-12-06T16:44:05.049Z"
-    },
-    {
-      "id": "PSbgpSt0H",
-      "uuid": "f8bf26d0-dbf9-4c0b-9617-88ac7393ab04",
-      "firstName": "Zechariah",
-      "lastName": "Crona",
-      "username": "Wendy_Wolff",
-      "password": "$2a$10$vvgPpib947.XcD8GpQwnmOZ8BmmRo4MlbD3jMpE969c6ox3MMu/T.",
-      "balance": 0,
-      "createdAt": "2023-12-06T16:47:52.858Z",
-      "modifiedAt": "2023-12-06T16:47:52.858Z"
-    },
-    {
-      "id": "LMWFvNulq",
-      "uuid": "b2b1d3a3-ff60-43d0-ae53-0818e514a06e",
-      "firstName": "Freda",
-      "lastName": "McLaughlin",
-      "username": "Euna90",
-      "password": "$2a$10$lQIkVp/8JSlPsgiq1owz9eA.ugMNemX/E/3MwzvrFql22CecVLNk.",
-      "balance": 0,
-      "createdAt": "2023-12-06T16:49:23.456Z",
-      "modifiedAt": "2023-12-06T16:49:23.456Z"
+      "createdAt": "2023-12-06T19:52:17.632Z",
+      "modifiedAt": "2023-12-06T19:52:17.632Z"
     }
   ],
   "contacts": [

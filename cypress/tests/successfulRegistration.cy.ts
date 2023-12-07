@@ -1,17 +1,10 @@
 import { loginPage, userKB } from "../pages/LoginPage";
 import { registerPage } from "../pages/RegisterPage";
+import { defaultPassword } from "../support/users";
 import { faker } from "@faker-js/faker";
 
 const { firstName, lastName } = faker.name;
 const { userName } = faker.internet;
-
-// const {
-//   firstNameInputField,
-//   lastNameInputField,
-//   usernameInputField,
-//   passwordInputField,
-//   confirmPasswordInputField,
-// } = registerPage;
 
 describe("Registering an account", () => {
   before(() => {
@@ -38,15 +31,11 @@ describe("Registering an account", () => {
   it.only("Fills out the user registration form and registers a new user", () => {
     cy.visit("/signup");
 
-    // registerPage.formInputIds.forEach((inputId: string, index) => {
-    //   cy.get(inputId).type(`${registerPage.formInputValues[index]}`);
-    // });
-
     registerPage.firstNameInputField.type(firstName());
     registerPage.lastNameInputField.type(lastName());
     registerPage.usernameInputField.type(userName());
-    registerPage.passwordInputField.type(Cypress.env().defaultPassword, { log: false });
-    registerPage.confirmPasswordInputField.type(Cypress.env().defaultPassword, { log: false });
+    registerPage.passwordInputField.type(defaultPassword, { log: false });
+    registerPage.confirmPasswordInputField.type(defaultPassword, { log: false });
     registerPage.signUpButton.click();
   });
 });
