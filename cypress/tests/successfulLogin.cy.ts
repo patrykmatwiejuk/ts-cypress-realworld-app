@@ -20,3 +20,5 @@ describe("Logging in", () => {
     loginPage.signInButton.click();
   });
 });
+
+console.log("hellothere");
