@@ -76,147 +76,26 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "xZK2kl5ZR",
-      "uuid": "c848ad8f-e243-46f8-af15-8fd2c9971b62",
-      "firstName": "Reymundo",
-      "lastName": "Homenick",
-      "username": "Viola_Sanford",
-      "password": "$2a$10$T2ohsReGuiX38oLX4umEbee0DNrIwvB578pHXMDtB80QLF63PFR.i",
+      "id": "2PUszu5CR",
+      "uuid": "a15bfc1a-d22c-4c5f-a622-cce13b6de560",
+      "firstName": "Gwen",
+      "lastName": "Corwin",
+      "username": "Aaron21",
+      "password": "$2a$10$NavNuR8XZqyZlaJ9G/AGM.XoHEjME144TR0GLUfAN8jSWJXwPaMwC",
       "balance": 0,
-      "createdAt": "2023-12-09T09:35:03.628Z",
-      "modifiedAt": "2023-12-09T09:35:03.628Z"
+      "createdAt": "2023-12-10T08:40:53.037Z",
+      "modifiedAt": "2023-12-10T08:40:53.037Z"
     },
     {
-      "id": "PWeCSnDQ_",
-      "uuid": "027a1021-3536-463b-a5d2-f36d41e2a7c7",
-      "firstName": "user",
-      "lastName": "user",
-      "username": "username",
-      "password": "$2a$10$CYFxegFaCdiFxQNp.bD4LOZaR1KHJ68iXhdIgAsZ96Hdg7dHaoPvG",
+      "id": "yzYc0ZskY",
+      "uuid": "14cf3c1b-14ae-42bd-97aa-dc29658f3243",
+      "firstName": "Gage",
+      "lastName": "Runolfsson",
+      "username": "Enoch.Schroeder80",
+      "password": "$2a$10$CRwhJ1CsMKuA1SSB3/SS7OoFEYJHcvMw3rtUvvIVreHg55ywjVeBS",
       "balance": 0,
-      "createdAt": "2023-12-09T09:36:02.862Z",
-      "modifiedAt": "2023-12-09T09:36:02.862Z"
-    },
-    {
-      "id": "Bz-iPoXxi",
-      "uuid": "ad77feee-1b07-44c7-b3a9-180fd7d5fb8f",
-      "firstName": "Tyra",
-      "lastName": "Balistreri",
-      "username": "Shanon68",
-      "password": "$2a$10$7PU5yiY1Egwf403Fdpj5rex/8VOLBMvviqefxeMNUHTxn9tB90iMe",
-      "balance": 0,
-      "createdAt": "2023-12-09T09:36:47.269Z",
-      "modifiedAt": "2023-12-09T09:36:47.269Z"
-    },
-    {
-      "id": "lsHdlGUvC",
-      "uuid": "da0a3e40-65ad-4ff3-9b5e-de7eb28bbb0e",
-      "firstName": "Nash",
-      "lastName": "Fahey",
-      "username": "Darien19",
-      "password": "$2a$10$fZs6nabpekagN6j94Fq6buVBuS3MuGz4O7QFzPsM5SJ0mIgH4W9cW",
-      "balance": 0,
-      "createdAt": "2023-12-09T10:01:23.594Z",
-      "modifiedAt": "2023-12-09T10:01:23.594Z"
-    },
-    {
-      "id": "GY5VM7FuR",
-      "uuid": "59e00bd2-78df-4d7f-854f-cbe48eac367f",
-      "firstName": "Lucius",
-      "lastName": "Lehner",
-      "username": "Domenica_Schneider58",
-      "password": "$2a$10$o5xAy/UZeJHaYfWTRYUj5uUURIw4Ppp/Jbbw3vGJZFB/e/BVjuFW.",
-      "balance": 0,
-      "createdAt": "2023-12-09T10:03:05.578Z",
-      "modifiedAt": "2023-12-09T10:03:05.578Z"
-    },
-    {
-      "id": "C0F2St04V",
-      "uuid": "9ec11524-dbb2-46fd-b621-032754658bb3",
-      "firstName": "Pamela",
-      "lastName": "Herzog",
-      "username": "Samara.Kemmer",
-      "password": "$2a$10$/Dst.7PUNbhf6Z8WVPlIDeeW6AJVCCJ.DL0pOMPUX9L3p3Jvg1dxq",
-      "balance": 0,
-      "createdAt": "2023-12-09T10:03:34.494Z",
-      "modifiedAt": "2023-12-09T10:03:34.494Z"
-    },
-    {
-      "id": "888-6hT-K",
-      "uuid": "83912f45-b46d-4a91-94db-a924854ac707",
-      "firstName": "Krystal",
-      "lastName": "Schultz",
-      "username": "Jayne_Kunde37",
-      "password": "$2a$10$pPTs9VJg.8WgPlHRvd56uuCiddNE9Ik/TV.v5GuKOCg2wu1zFXDkG",
-      "balance": 0,
-      "createdAt": "2023-12-09T10:39:06.912Z",
-      "modifiedAt": "2023-12-09T10:39:06.912Z"
-    },
-    {
-      "id": "TLrWb9MpE",
-      "uuid": "93dec7d6-2d4b-44fe-a7a4-5d4c223d875a",
-      "firstName": "Alexie",
-      "lastName": "Bernhard",
-      "username": "Joanie_Krajcik",
-      "password": "$2a$10$tn7pOpMRo2Vh2.ogYhmo6.IPVgDdERiD0WYPGlbQwtTx59cb4g7S2",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:05:15.732Z",
-      "modifiedAt": "2023-12-09T11:05:15.732Z"
-    },
-    {
-      "id": "QMc0Rz58x",
-      "uuid": "11b0b1e7-b550-4394-bfe6-84b2b7a2fc94",
-      "firstName": "Leone",
-      "lastName": "Cruickshank",
-      "username": "Anya_West",
-      "password": "$2a$10$WhoeMBZqlKPnnDdr2boLbuKOCY.rQiZvetGxz6.kmJ2O6yILlJLDu",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:06:25.864Z",
-      "modifiedAt": "2023-12-09T11:06:25.864Z"
-    },
-    {
-      "id": "1VVdTf5gl",
-      "uuid": "301dbdf6-63aa-4195-8eb6-7cdeffcf6b95",
-      "firstName": "Allison",
-      "lastName": "Howe",
-      "username": "Bret64",
-      "password": "$2a$10$wzriDDR03jm3pu5dhmvEvupIKhAkH2MXihpr45nhhu7IkeQxYTLjO",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:18:29.756Z",
-      "modifiedAt": "2023-12-09T11:18:29.756Z"
-    },
-    {
-      "id": "QWYMBAeCP",
-      "uuid": "764d8e83-a635-43c4-b67a-676aeb1b1cff",
-      "firstName": "Milton",
-      "lastName": "Weber",
-      "username": "Grady22",
-      "password": "$2a$10$S/6aVKwgFTNMyF48xqYw..d36uoN03xe1kV3cXE1E1isW9REpOSwG",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:27:47.343Z",
-      "modifiedAt": "2023-12-09T11:27:47.343Z"
-    },
-    {
-      "id": "bssAB5qaA",
-      "uuid": "a3c82c17-f779-45e8-904d-846c5719136e",
-      "firstName": "Vicenta",
-      "lastName": "Fadel",
-      "username": "Araceli_Wiza",
-      "password": "$2a$10$eNY/phxfgEBpMHB4Mxhevu0zhVLV8P/OISLIONebdWCmAgBS08HlO",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:30:22.172Z",
-      "modifiedAt": "2023-12-09T11:30:22.172Z"
-    },
-    {
-      "id": "3zx8qGwI-",
-      "uuid": "b5c31176-c41e-4b3c-8fce-049d8ebf298d",
-      "firstName": "Taurean",
-      "lastName": "Morar",
-      "username": "Faustino75",
-      "password": "$2a$10$gv/YkIZ5ES6BeToQ9e2QsOlszjlmtECifbYpr1e/aQjVCzwwdNEzG",
-      "balance": 0,
-      "createdAt": "2023-12-09T11:34:04.645Z",
-      "modifiedAt": "2023-12-09T11:34:04.645Z"
+      "createdAt": "2023-12-10T08:42:02.574Z",
+      "modifiedAt": "2023-12-10T08:42:02.574Z"
     }
   ],
   "contacts": [

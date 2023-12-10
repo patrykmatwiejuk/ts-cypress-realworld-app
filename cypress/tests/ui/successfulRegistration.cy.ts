@@ -39,22 +39,26 @@ describe("Registering an account", () => {
     registerPage.confirmPasswordInputField.type(defaultPassword, { log: false });
     registerPage.signUpButton.click();
 
-    // cy.intercept("POST", `${apiUrl}/users`, (req) => {
-    //   req.reply({
-    //     statusCode: 201,
-    //     body: {
-    //       user: {
-    //         balance: 0,
-    //         createdAt: "2023-12-09T09:36:02.862Z",
-    //         firstName: "user",
-    //         id: "PWeCSnDQ_",
-    //         lastName: "user",
-    //         modifiedAt: "2023-12-09T09:36:02.862Z",
-    //         password: "$2a$10$CYFxegFaCdiFxQNp.bD4LOZaR1KHJ68iXhdIgAsZ96Hdg7dHaoPvG",
-    //         username: "username",
-    //         uuid: "027a1021-3536-463b-a5d2-f36d41e2a7c7",
-    //       },
-    //     },
+    //   cy.intercept("POST", `${apiUrl}/users`, (req) => {});
+
+    // TODO:
+
+    // cy.intercept('POST', '/api/register', (req) => {
+    //   req.alias('registerRequest');
+    // }).as('registerInterception');
+
+    // registerPage.signUpButton.click();
+
+    // cy.wait('@registerInterception').then((interception) => {
+    //   const requestPayload = interception.request.body;
+
+    //   // Assert against the request payload
+    //   expect(requestPayload).to.deep.equal({
+    //     firstName: firstName(),
+    //     lastName: lastName(),
+    //     username: userName(),
+    //     password: defaultPassword,
+    //     confirmPassword: defaultPassword
     //   });
     // });
   });

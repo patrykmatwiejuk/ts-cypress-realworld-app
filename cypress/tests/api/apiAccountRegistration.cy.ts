@@ -17,16 +17,23 @@ describe("API login", () => {
       confirmPassword: defaultPassword,
     }).then((response) => {
       expect(response.status).to.equal(201);
-      cy.wrap(response.body.user).should((user) => {
-        expect(user).to.have.property("balance");
-        expect(user).to.have.property("firstName");
-        expect(user).to.have.property("lastName");
-        expect(user).to.have.property("username");
-        expect(user).to.have.property("createdAt");
-        expect(user).to.have.property("id");
-        expect(user).to.have.property("modifiedAt");
-        expect(user).to.have.property("password");
-        expect(user).to.have.property("uuid");
+
+      const userProperties = [
+        "balance",
+        "firstName",
+        "lastName",
+        "username",
+        "createdAt",
+        "id",
+        "modifiedAt",
+        "password",
+        "uuid",
+      ];
+
+      cy.wrap(response.body.user).should((user: object) => {
+        userProperties.forEach((property: string) => {
+          expect(user).to.have.property(property);
+        });
       });
 
       // expected response properties
