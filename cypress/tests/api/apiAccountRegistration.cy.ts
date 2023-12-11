@@ -6,8 +6,8 @@ const { userName } = faker.internet;
 const apiUrl = Cypress.env("apiUrl");
 
 // Make the POST request and assert the response
-describe("API login", () => {
-  it("logs in via API and asserts the response", () => {
+describe("API registration", () => {
+  it("creates an account via API and asserts the response", () => {
     cy.request("POST", `${apiUrl}/users`, {
       /* request body */
       firstName: firstName(),
