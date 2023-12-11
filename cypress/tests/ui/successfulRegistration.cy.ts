@@ -5,7 +5,9 @@ import { faker } from "@faker-js/faker";
 
 const { firstName, lastName } = faker.name;
 const { userName } = faker.internet;
-const apiUrl = Cypress.env("apiUrl");
+const preservedFirstName = firstName();
+const preservedLastName = lastName();
+const preservedUserName = userName();
 
 describe("Registering an account", () => {
   before(() => {
@@ -32,34 +34,27 @@ describe("Registering an account", () => {
   it.only("Fills out the user registration form and registers a new user", () => {
     cy.visit("/signup");
 
-    registerPage.firstNameInputField.type(firstName());
-    registerPage.lastNameInputField.type(lastName());
-    registerPage.usernameInputField.type(userName());
+    registerPage.firstNameInputField.type(preservedFirstName);
+    registerPage.lastNameInputField.type(preservedLastName);
+    registerPage.usernameInputField.type(preservedUserName);
     registerPage.passwordInputField.type(defaultPassword, { log: false });
     registerPage.confirmPasswordInputField.type(defaultPassword, { log: false });
+
+    cy.intercept("POST", `**/users`).as("registerInterception");
+
     registerPage.signUpButton.click();
 
-    //   cy.intercept("POST", `${apiUrl}/users`, (req) => {});
+    cy.wait("@registerInterception").then((interception) => {
+      const requestPayload = interception.request.body;
 
-    // TODO:
-
-    // cy.intercept('POST', '/api/register', (req) => {
-    //   req.alias('registerRequest');
-    // }).as('registerInterception');
-
-    // registerPage.signUpButton.click();
-
-    // cy.wait('@registerInterception').then((interception) => {
-    //   const requestPayload = interception.request.body;
-
-    //   // Assert against the request payload
-    //   expect(requestPayload).to.deep.equal({
-    //     firstName: firstName(),
-    //     lastName: lastName(),
-    //     username: userName(),
-    //     password: defaultPassword,
-    //     confirmPassword: defaultPassword
-    //   });
-    // });
+      // Assert against the request payload
+      expect(requestPayload).to.deep.equal({
+        firstName: preservedFirstName,
+        lastName: preservedLastName,
+        username: preservedUserName,
+        password: defaultPassword,
+        confirmPassword: defaultPassword,
+      });
+    });
   });
 });

@@ -18,7 +18,7 @@ describe("API registration", () => {
     }).then((response) => {
       expect(response.status).to.equal(201);
 
-      const userProperties = [
+      const userProperties: string[] = [
         "balance",
         "firstName",
         "lastName",
