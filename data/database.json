@@ -74,17 +74,6 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
-    },
-    {
-      "id": "Zvn4ahw69",
-      "uuid": "1fec2c66-3204-439c-89a2-2e7bfca13605",
-      "firstName": "randomname",
-      "lastName": "randomlastname",
-      "username": "randomusername",
-      "password": "$2a$10$EB0MPCRwOSzK7gOH0szeIOn.2oaozd5xHhKfzuFywodQN6t1ibqt6",
-      "balance": 0,
-      "createdAt": "2023-12-06T19:52:17.632Z",
-      "modifiedAt": "2023-12-06T19:52:17.632Z"
     }
   ],
   "contacts": [

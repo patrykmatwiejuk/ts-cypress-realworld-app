@@ -1,24 +1,27 @@
-import { loginPage, userKB, userTB, userA, userG, userJK } from "../pages/LoginPage";
+// import { loginPage, userKB, userTB, userA, userG, userJK } from "../pages/LoginPage";
+import { loginSelector, loginSelectors, helperText } from "../support/selectors/loginSelectors";
+import { userKB, userTB, userA, userG, userJK, defaultPassword } from "../support/users";
 
 describe("Logging in", () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit("/signin");
   });
 
   it("Visits the page and checks all required elements", () => {
     cy.url().should("include", "/signin");
-    loginPage.usernameInputField.should("be.visible");
-    loginPage.passwordInputField.should("be.visible");
-    loginPage.rememberMeCheckbox.should("be.visible");
-    loginPage.rememberMeLabel.contains("Remember me");
+
+    loginSelectors.forEach((selector: string, index: number) => {
+      if (index === 0) {
+        cy.get(selector).isVisible().click().blur();
+        cy.contains(helperText).isVisible();
+      } else {
+        cy.get(selector).isVisible();
+      }
+    });
   });
 
   it("Fills out the log in form", () => {
-    cy.visit("/signin");
-    loginPage.usernameInputField.type(userKB.username);
-    loginPage.passwordInputField.type(userKB.password, { log: false });
-    loginPage.signInButton.click();
+    cy.login(userKB, defaultPassword);
+    cy.get(loginSelector.signInButton).click();
   });
 });
-
-console.log("hellothere");
