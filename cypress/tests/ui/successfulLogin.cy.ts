@@ -1,4 +1,4 @@
-import { loginPage, userKB, userTB, userA, userG, userJK } from "../../pages/LoginPage";
+import { loginPage, userKB, userTB, userA, userG, userJK } from "../pages/LoginPage";
 
 describe("Logging in", () => {
   before(() => {

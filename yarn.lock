@@ -8,9 +8,9 @@
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
 "@adobe/css-tools@^4.0.1":
-  version "4.3.1"
-  resolved "https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.3.1.tgz"
-  integrity sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==
+  version "4.3.2"
+  resolved "https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.3.2.tgz"
+  integrity sha512-DA5a1C0gD/pLOvhv33YMrbf2FK3oUzwNl9oOJqE4XVjuEtt6XIakRcsd7eLiOSPkp1kTRQGICTA8cKra/vFbjw==
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
@@ -3207,10 +3207,10 @@
   resolved "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@esbuild/darwin-arm64@0.18.11":
+"@esbuild/win32-x64@0.18.11":
   version "0.18.11"
-  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.18.11.tgz"
-  integrity sha512-Gm0QkI3k402OpfMKyQEEMG0RuW2LQsSmI6OeO4El2ojJMoF5NLYb3qMIjvbG/lbMeLOGiW6ooU8xqc+S0fgz2w==
+  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.18.11.tgz"
+  integrity sha512-rQI4cjLHd2hGsM1LqgDI7oOCYbQ6IBOVsX9ejuRMSze0GqXUG2ekwiKkiBU1pRGSeCqFFHxTrcEydB2Hyoz9CA==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -8426,11 +8426,6 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fsevents@~2.3.2:
-  version "2.3.2"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -11769,7 +11764,7 @@ postcss-selector-parser@^6.0.10:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-postcss@^8.4.24:
+postcss@^8.4.27:
   version "8.4.31"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz"
   integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
@@ -12561,10 +12556,10 @@ rollup@^2.77.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-rollup@^3.25.2:
-  version "3.26.2"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-3.26.2.tgz"
-  integrity sha512-6umBIGVz93er97pMgQO08LuH3m6PUb3jlDUUGFsNJB6VgTCUaDFpupf5JfU30529m/UKOgmiX+uY6Sx8cOYpLA==
+rollup@^3.27.1:
+  version "3.29.4"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-3.29.4.tgz"
+  integrity sha512-oWzmBZwvYrU0iJHtDmhsm662rC15FRXmcjCk1xD771dFDx5jJ02ufAQQTn0etB2emNk4J9EZg/yWKpsn9BWGRw==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -14115,13 +14110,13 @@ vite-plugin-istanbul@^4.1.0:
     test-exclude "^6.0.0"
 
 "vite@^3.0.0 || ^4.0.0", vite@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.npmjs.org/vite/-/vite-4.4.2.tgz"
-  integrity sha512-zUcsJN+UvdSyHhYa277UHhiJ3iq4hUBwHavOpsNUGsTgjBeoBlK8eDt+iT09pBq0h9/knhG/SPrZiM7cGmg7NA==
+  version "4.5.1"
+  resolved "https://registry.npmjs.org/vite/-/vite-4.5.1.tgz"
+  integrity sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==
   dependencies:
     esbuild "^0.18.10"
-    postcss "^8.4.24"
-    rollup "^3.25.2"
+    postcss "^8.4.27"
+    rollup "^3.27.1"
   optionalDependencies:
     fsevents "~2.3.2"
 
