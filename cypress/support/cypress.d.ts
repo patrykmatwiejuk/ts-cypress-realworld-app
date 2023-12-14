@@ -3,6 +3,15 @@ type LoginCredentials = {
   password: string;
 };
 
+type LoginSelectors = {
+  usernameInputField: string;
+  passwordInputField: string;
+  rememberMeCheckbox: string;
+  rememberMeLabel: string;
+  signInButton: string;
+  registerAnAccountLink: string;
+};
+
 // import { mount } from "cypress/react";
 
 // Augment the Cypress namespace to include type definitions for
@@ -12,7 +21,8 @@ type LoginCredentials = {
 
 namespace Cypress {
   interface Chainable {
-    loginAs(userCredentials: LoginCredentials): Chainable<VoidFunction>;
+    loginSession(userCredentials: LoginCredentials): Chainable<VoidFunction>;
+    login(username, password): Chainable<VoidFunction>;
     isVisible(): Chainable<VoidFunction>;
   }
 }
