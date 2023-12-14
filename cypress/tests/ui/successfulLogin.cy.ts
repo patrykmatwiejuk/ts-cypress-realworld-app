@@ -8,7 +8,7 @@ describe("Logging in", () => {
 
   it("Visits the page and checks all required elements", () => {
     cy.url().should("include", "/signin");
-    loginSelectors.forEach((selector: string, index: number) => {
+    loginSelectors.forEach((selector: string, index) => {
       if (index === 0) {
         cy.get(selector).isVisible().click().blur();
         cy.contains(helperText).isVisible();
