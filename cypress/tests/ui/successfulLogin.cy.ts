@@ -1,4 +1,8 @@
-import { loginSelector, loginSelectors, helperText } from "../../support/selectors/loginSelectors";
+import {
+  loginFormSelectors,
+  loginSelectors,
+  helperText,
+} from "../../support/selectors/loginSelectors";
 import { userKB, userTB, userA, userG, userJK, defaultPassword } from "../../support/users";
 
 describe("Logging in", () => {
@@ -20,6 +24,6 @@ describe("Logging in", () => {
 
   it("Fills out the log in form", () => {
     cy.login(userKB, defaultPassword);
-    cy.get(loginSelector.signInButton).click();
+    cy.get(loginFormSelectors.signInButton).click();
   });
 });

@@ -1,3 +1,5 @@
+// remake from POM to Cypress support folder selectors and helper functions
+
 import { loginPage, userKB } from "../../pages/LoginPage";
 import { registerPage } from "../../pages/RegisterPage";
 import { defaultPassword } from "../../support/users";
