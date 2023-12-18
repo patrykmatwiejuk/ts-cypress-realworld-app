@@ -6,11 +6,8 @@ import {
 import { userKB, userTB, userA, userG, userJK, defaultPassword } from "../../support/users";
 
 describe("Logging in", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("/signin");
-  });
-
-  it("Visits the page and checks all required elements", () => {
     cy.url().should("include", "/signin");
     loginSelectors.forEach((selector: string, index) => {
       if (index === 0) {
