@@ -1,4 +1,4 @@
-export const loginFormSelectors: LoginSelectors = {
+const loginFormSelectors: LoginSelectors = {
   usernameInputField: "#username",
   passwordInputField: "#password",
   rememberMeCheckbox: "[data-test='signin-remember-me']",
@@ -7,7 +7,7 @@ export const loginFormSelectors: LoginSelectors = {
   registerAnAccountLink: '[data-test="signup"]',
 };
 
-export const loginSelectors: string[] = [
+const loginSelectors: string[] = [
   loginFormSelectors.usernameInputField,
   loginFormSelectors.passwordInputField,
   loginFormSelectors.rememberMeCheckbox,
@@ -16,4 +16,6 @@ export const loginSelectors: string[] = [
   loginFormSelectors.registerAnAccountLink,
 ];
 
-export const helperText: string = "Username is required";
+const helperText: string = "Username is required";
+
+export { loginFormSelectors, loginSelectors, helperText };
