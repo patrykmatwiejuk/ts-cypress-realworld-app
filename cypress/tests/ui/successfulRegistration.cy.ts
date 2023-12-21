@@ -3,13 +3,11 @@
 import { loginPage, userKB } from "../../pages/LoginPage";
 import { registerPage } from "../../pages/RegisterPage";
 import { defaultPassword } from "../../support/users";
-import { faker } from "@faker-js/faker";
-
-const { firstName, lastName } = faker.name;
-const { userName } = faker.internet;
-const preservedFirstName = firstName();
-const preservedLastName = lastName();
-const preservedUserName = userName();
+import {
+  preservedFirstName,
+  preservedLastName,
+  preservedUserName,
+} from "../../support/randomizedFakerData";
 
 describe("Registering an account", () => {
   before(() => {
