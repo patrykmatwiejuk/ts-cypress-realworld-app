@@ -10,6 +10,7 @@ type LoginSelectors = {
   rememberMeLabel: string;
   signInButton: string;
   registerAnAccountLink: string;
+  signInErrorAlert: string;
 };
 
 // import { mount } from "cypress/react";

@@ -6,4 +6,4 @@ const preservedFirstName = firstName();
 const preservedLastName = lastName();
 const preservedUserName = userName();
 
-export { preservedFirstName, preservedLastName, preservedUserName };
+export { userName, preservedFirstName, preservedLastName, preservedUserName };

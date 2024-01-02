@@ -1,6 +1,6 @@
 import {
   loginFormSelectors,
-  loginSelectors,
+  loginSelectorsArray,
   helperText,
 } from "../../support/selectors/loginSelectors";
 import { userKB, userTB, userA, userG, userJK, defaultPassword } from "../../support/users";
@@ -9,7 +9,7 @@ describe("Logging in", () => {
   before(() => {
     cy.visit("/signin");
     cy.url().should("include", "/signin");
-    loginSelectors.forEach((selector: string, index) => {
+    loginSelectorsArray.forEach((selector: string, index) => {
       if (index === 0) {
         cy.get(selector).isVisible().click().blur();
         cy.contains(helperText).isVisible();

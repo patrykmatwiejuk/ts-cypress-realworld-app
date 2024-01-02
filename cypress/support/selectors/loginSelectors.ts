@@ -5,9 +5,10 @@ const loginFormSelectors: LoginSelectors = {
   rememberMeLabel: ".MuiFormControlLabel-root > .MuiTypography-root",
   signInButton: '[data-test="signin-submit"]',
   registerAnAccountLink: '[data-test="signup"]',
+  signInErrorAlert: '[data-test="signin-error"]',
 };
 
-const loginSelectors: string[] = [
+const loginSelectorsArray: string[] = [
   loginFormSelectors.usernameInputField,
   loginFormSelectors.passwordInputField,
   loginFormSelectors.rememberMeCheckbox,
@@ -18,4 +19,4 @@ const loginSelectors: string[] = [
 
 const helperText: string = "Username is required";
 
-export { loginFormSelectors, loginSelectors, helperText };
+export { loginFormSelectors, loginSelectorsArray, helperText };
