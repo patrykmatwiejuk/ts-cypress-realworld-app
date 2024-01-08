@@ -74,6 +74,28 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "gZgxxqZWh",
+      "uuid": "f48f7eef-d6ff-40de-ad5b-3e4e6c3d0dc5",
+      "firstName": "Gabriella",
+      "lastName": "Waters",
+      "username": "Adrian.West",
+      "password": "$2a$10$a8YiHovIns/p.cIhGW3ywO4tlcCFQnB.E7a0qlw7SR6TohThY22j6",
+      "balance": 0,
+      "createdAt": "2024-01-08T14:18:40.705Z",
+      "modifiedAt": "2024-01-08T14:18:40.705Z"
+    },
+    {
+      "id": "SRYbWOAHT",
+      "uuid": "2dc4d5ad-43c9-430e-b2dc-ac92b83317de",
+      "firstName": "Leatha",
+      "lastName": "Rippin",
+      "username": "Richard.Runte",
+      "password": "$2a$10$erI2xCtexwYIMmOph87oMeVguq1e3utz8ydzJjqkQ1Q12mDz.fX9O",
+      "balance": 0,
+      "createdAt": "2024-01-08T14:19:29.798Z",
+      "modifiedAt": "2024-01-08T14:19:29.798Z"
     }
   ],
   "contacts": [

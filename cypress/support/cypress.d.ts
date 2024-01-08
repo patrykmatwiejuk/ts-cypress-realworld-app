@@ -13,6 +13,20 @@ type LoginSelectors = {
   signInErrorAlert: string;
 };
 
+type RegisterSelectors = {
+  firstNameInputField: string;
+  lastNameInputField: string;
+  usernameInputField: string;
+  passwordInputField: string;
+  confirmPasswordInputField: string;
+  signUpButton: string;
+  firstNameRequiredHelperText: string;
+  lastNameRequiredHelperText: string;
+  usernameRequiredHelperText: string;
+  passwordRequiredHelperText: string;
+  confirmPasswordRequiredHelperText: string;
+};
+
 // import { mount } from "cypress/react";
 
 // Augment the Cypress namespace to include type definitions for
