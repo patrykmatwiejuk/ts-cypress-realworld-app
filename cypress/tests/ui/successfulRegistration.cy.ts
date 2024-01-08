@@ -38,7 +38,7 @@ describe("Registering an account", () => {
     });
   });
 
-  it.only("Fills out the user registration form and registers a new user", () => {
+  it("Fills out the user registration form and registers a new user", () => {
     cy.visit("/signup");
 
     cy.get(registerFormSelectors.firstNameInputField).type(preservedFirstName);

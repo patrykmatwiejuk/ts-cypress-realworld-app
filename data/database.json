@@ -96,6 +96,28 @@
       "balance": 0,
       "createdAt": "2024-01-08T14:19:29.798Z",
       "modifiedAt": "2024-01-08T14:19:29.798Z"
+    },
+    {
+      "id": "KFwh-wGTO",
+      "uuid": "2e25d49f-1eb4-40d5-9cbc-80e61f42fb73",
+      "firstName": "Charley",
+      "lastName": "Lesch",
+      "username": "Felix29",
+      "password": "$2a$10$ETCQDuJmzsejCjczqiDZl.Ha.oakZSJ8wg9p0KxPK3dXWnDi5n0Wm",
+      "balance": 0,
+      "createdAt": "2024-01-08T14:21:56.062Z",
+      "modifiedAt": "2024-01-08T14:21:56.062Z"
+    },
+    {
+      "id": "B3WYXrazS",
+      "uuid": "68dbfa3f-3f12-4ad4-a4f0-41b0a08fdf23",
+      "firstName": "Malcolm",
+      "lastName": "Padberg",
+      "username": "Burnice.Mayert",
+      "password": "$2a$10$Y3oSB0BI5ynIfaetievcB.Nflpz7gBA1s.a43ozEbfdBKhMHrApB.",
+      "balance": 0,
+      "createdAt": "2024-01-08T14:22:05.184Z",
+      "modifiedAt": "2024-01-08T14:22:05.184Z"
     }
   ],
   "contacts": [
