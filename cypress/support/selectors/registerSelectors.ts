@@ -28,4 +28,32 @@ const formInputHelperTexts: string[] = [
   "Confirm your password",
 ];
 
-export { registerFormSelectors, formInputIds, formInputHelperTexts };
+const {
+  firstNameInputField,
+  lastNameInputField,
+  usernameInputField,
+  passwordInputField,
+  confirmPasswordInputField,
+  signUpButton,
+  firstNameRequiredHelperText,
+  lastNameRequiredHelperText,
+  usernameRequiredHelperText,
+  passwordRequiredHelperText,
+  confirmPasswordRequiredHelperText,
+} = registerFormSelectors;
+
+export {
+  firstNameInputField,
+  lastNameInputField,
+  usernameInputField,
+  passwordInputField,
+  confirmPasswordInputField,
+  signUpButton,
+  firstNameRequiredHelperText,
+  lastNameRequiredHelperText,
+  usernameRequiredHelperText,
+  passwordRequiredHelperText,
+  confirmPasswordRequiredHelperText,
+  formInputIds,
+  formInputHelperTexts,
+};
