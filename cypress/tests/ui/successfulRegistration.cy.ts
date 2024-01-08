@@ -19,6 +19,7 @@ import {
 describe("Registering an account", () => {
   before(() => {
     cy.visit("/signin");
+    cy.intercept("POST", `**/users`).as("registerInterception");
   });
 
   it("Visits the login page and checks if the -- Dont have an account? Sign Up -- button is available", () => {
@@ -46,8 +47,6 @@ describe("Registering an account", () => {
     cy.get(registerFormSelectors.usernameInputField).type(preservedUserName);
     cy.get(registerFormSelectors.passwordInputField).type(defaultPassword, { log: false });
     cy.get(registerFormSelectors.confirmPasswordInputField).type(defaultPassword, { log: false });
-
-    cy.intercept("POST", `**/users`).as("registerInterception");
 
     cy.get(registerFormSelectors.signUpButton).click();
 
