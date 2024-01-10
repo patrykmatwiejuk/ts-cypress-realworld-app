@@ -50,17 +50,17 @@ describe("Registering an account", () => {
     cy.intercept("POST", `**/users`).as("registerInterception");
     cy.get(signUpButton).click();
 
-    cy.wait("@registerInterception").then((interception) => {
-      const requestPayload = interception.request.body;
-
-      // Assert against the request payload
-      expect(requestPayload).to.deep.equal({
-        firstName: preservedFirstName,
-        lastName: preservedLastName,
-        username: preservedUserName,
-        password: defaultPassword,
-        confirmPassword: defaultPassword,
+    cy.wait("@registerInterception")
+      .its("request.body")
+      .then((requestPayload) => {
+        // Assert against the request payload
+        expect(requestPayload).to.deep.equal({
+          firstName: preservedFirstName,
+          lastName: preservedLastName,
+          username: preservedUserName,
+          password: defaultPassword,
+          confirmPassword: defaultPassword,
+        });
       });
-    });
   });
 });
