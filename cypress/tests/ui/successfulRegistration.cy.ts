@@ -1,23 +1,27 @@
 import { loginFormSelectors } from "../../support/selectors/loginSelectors";
-import { userKB, userTB, userA, userG, userJK, defaultPassword } from "../../support/users";
+import { defaultPassword } from "../../support/users";
 import {
+  registerFormSelectors,
+  formInputIds,
+  formInputHelperTexts,
+} from "../../support/selectors/registerSelectors";
+import {
+  preservedFirstName,
+  preservedLastName,
+  preservedUserName,
+} from "../../support/randomizedFakerData";
+import { onboardingSelectors } from "../../support/selectors/onboardingSelectors";
+
+const {
   firstNameInputField,
   lastNameInputField,
   usernameInputField,
   passwordInputField,
   confirmPasswordInputField,
   signUpButton,
-  formInputIds,
-  formInputHelperTexts,
-} from "../../support/selectors/registerSelectors";
+} = registerFormSelectors;
 
-import {
-  preservedFirstName,
-  preservedLastName,
-  preservedUserName,
-} from "../../support/randomizedFakerData";
-
-describe("Registering an account", () => {
+describe("Registering an account and logging in on a registered account", () => {
   before(() => {
     cy.visit("/signin");
   });
@@ -62,5 +66,16 @@ describe("Registering an account", () => {
           confirmPassword: defaultPassword,
         });
       });
+  });
+  it("Logs in for the first time after account registration", () => {
+    cy.visit("/signin");
+    cy.login(preservedUserName, defaultPassword);
+    cy.get(loginFormSelectors.signInButton).click();
+    cy.get(onboardingSelectors.onboardingDialogTitle).should(
+      "contain",
+      "Get Started with Real World App"
+    );
+    cy.contains("Real World App requires a Bank Account to perform transactions.");
+    cy.get(onboardingSelectors.onboardingButtonNext).isVisible();
   });
 });

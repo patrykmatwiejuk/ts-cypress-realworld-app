@@ -1,4 +1,4 @@
-const registerFormSelectors: RegisterSelectors = {
+export const registerFormSelectors: RegisterSelectors = {
   firstNameInputField: "#firstName",
   lastNameInputField: "#lastName",
   usernameInputField: "#username",
@@ -12,7 +12,7 @@ const registerFormSelectors: RegisterSelectors = {
   confirmPasswordRequiredHelperText: "Confirm your password",
 };
 
-const formInputIds: string[] = [
+export const formInputIds: string[] = [
   "#firstName",
   "#lastName",
   "#username",
@@ -20,40 +20,10 @@ const formInputIds: string[] = [
   "#confirmPassword",
 ];
 
-const formInputHelperTexts: string[] = [
+export const formInputHelperTexts: string[] = [
   "First Name is required",
   "Last Name is required",
   "Username is required",
   "Enter your password",
   "Confirm your password",
 ];
-
-const {
-  firstNameInputField,
-  lastNameInputField,
-  usernameInputField,
-  passwordInputField,
-  confirmPasswordInputField,
-  signUpButton,
-  firstNameRequiredHelperText,
-  lastNameRequiredHelperText,
-  usernameRequiredHelperText,
-  passwordRequiredHelperText,
-  confirmPasswordRequiredHelperText,
-} = registerFormSelectors;
-
-export {
-  firstNameInputField,
-  lastNameInputField,
-  usernameInputField,
-  passwordInputField,
-  confirmPasswordInputField,
-  signUpButton,
-  firstNameRequiredHelperText,
-  lastNameRequiredHelperText,
-  usernameRequiredHelperText,
-  passwordRequiredHelperText,
-  confirmPasswordRequiredHelperText,
-  formInputIds,
-  formInputHelperTexts,
-};
