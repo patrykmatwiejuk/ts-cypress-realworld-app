@@ -30,6 +30,9 @@ type RegisterSelectors = {
 type OnboardingSelectors = {
   onboardingDialogTitle: string;
   onboardingButtonNext: string;
+  bankName: string;
+  routingNumber: string;
+  accountNumber: string;
 };
 
 // import { mount } from "cypress/react";
@@ -44,5 +47,6 @@ namespace Cypress {
     loginSession(userCredentials: LoginCredentials): Chainable<VoidFunction>;
     login(username, password): Chainable<VoidFunction>;
     isVisible(): Chainable<VoidFunction>;
+    assertFormFields(form): Chainable<VoidFunction>;
   }
 }

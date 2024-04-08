@@ -21,6 +21,8 @@ const {
   signUpButton,
 } = registerFormSelectors;
 
+export const newPreservedUsername = preservedUserName;
+
 describe("Registering an account and logging in on a registered account", () => {
   before(() => {
     cy.visit("/signin");
@@ -48,7 +50,7 @@ describe("Registering an account and logging in on a registered account", () => 
 
     cy.get(firstNameInputField).type(preservedFirstName);
     cy.get(lastNameInputField).type(preservedLastName);
-    cy.get(usernameInputField).type(preservedUserName);
+    cy.get(usernameInputField).type(newPreservedUsername);
     cy.get(passwordInputField).type(defaultPassword, { log: false });
     cy.get(confirmPasswordInputField).type(defaultPassword, { log: false });
     cy.intercept("POST", `**/users`).as("registerInterception");
@@ -61,7 +63,7 @@ describe("Registering an account and logging in on a registered account", () => 
         expect(requestPayload).to.deep.equal({
           firstName: preservedFirstName,
           lastName: preservedLastName,
-          username: preservedUserName,
+          username: newPreservedUsername,
           password: defaultPassword,
           confirmPassword: defaultPassword,
         });
@@ -69,7 +71,7 @@ describe("Registering an account and logging in on a registered account", () => 
   });
   it("Logs in for the first time after account registration", () => {
     cy.visit("/signin");
-    cy.login(preservedUserName, defaultPassword);
+    cy.login(newPreservedUsername, defaultPassword);
     cy.get(loginFormSelectors.signInButton).click();
     cy.get(onboardingSelectors.onboardingDialogTitle).should(
       "contain",
