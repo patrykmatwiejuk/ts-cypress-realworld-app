@@ -33,6 +33,7 @@ type OnboardingSelectors = {
   bankName: string;
   routingNumber: string;
   accountNumber: string;
+  createBankAccountSaveButton: string;
 };
 
 // import { mount } from "cypress/react";
