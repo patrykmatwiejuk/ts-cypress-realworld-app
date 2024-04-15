@@ -20,7 +20,7 @@ describe("Logging in on a new account and going through the onboarding", () => {
     cy.get(onboardingSelectors.onboardingButtonNext).isVisible().click();
     cy.assertFormFields(bankAccountArray);
     bankAccountArray.forEach((inputField, index) => {
-      cy.get(inputField).type(bankAccountDetails[index]); // todo
+      cy.get(inputField).type(bankAccountDetails[index]);
     });
     cy.get(onboardingSelectors.createBankAccountSaveButton).click();
     cy.get(onboardingSelectors.onboardingDialogTitle).should("contain", "Finished");
